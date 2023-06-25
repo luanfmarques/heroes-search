@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
     max-height: 100vh;
     overflow-y: scroll;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 export default GlobalStyle;

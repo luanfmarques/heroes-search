@@ -1,22 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import HeroDetails from "./Pages/HeroDetails/HeroDetails";
+import Layout from "./components/Layout/Layout";
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hero-details/:id" element={<HeroDetails />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
