@@ -1,9 +1,9 @@
 import axios from "axios";
 import md5 from "md5";
 
-const API_PUBLIC_KEY = "7219a1c1526be706bd3dbce4553bfbbd";
-const API_PRIVATE_KEY = "9f6691ff9536315840d2839ac6db2a03a037870c";
-const API_BASE_URL = "https://gateway.marvel.com/v1/public";
+const API_PUBLIC_KEY = process.env.REACT_APP_API_PUBLIC_KEY;
+const API_PRIVATE_KEY = process.env.REACT_APP_API_PRIVATE_KEY;
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const marvelApi = axios.create({
   baseURL: API_BASE_URL,
