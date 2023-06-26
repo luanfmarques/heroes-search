@@ -34,14 +34,14 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
 1. Clone este repositório para o seu diretório local:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone https://github.com/luanfmarques/heroes-search
 
    ```
 
 2. Clone este repositório para o seu diretório local:
 
    ```bash
-   cd seu-projeto
+   cd heroes-search
 
    ```
 
