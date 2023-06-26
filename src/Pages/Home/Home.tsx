@@ -18,7 +18,9 @@ const Home: React.FC = () => {
       const heroes = await searchHeroesByName(searchTerm);
       setIsLoading(false);
       setHeroes(heroes);
-      heroes.length === 0 && setNotFound("Character not found...");
+      heroes.length === 0
+        ? setNotFound("Character not found...")
+        : setNotFound("");
     } else {
       setHeroes([]);
       setNotFound("");
