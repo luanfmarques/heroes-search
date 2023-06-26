@@ -10,6 +10,7 @@ const Home: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [heroes, setHeroes] = useState<Hero[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [notFound, setNotFound] = useState("");
 
   const handleSearch = async () => {
     if (searchTerm) {
@@ -17,8 +18,10 @@ const Home: React.FC = () => {
       const heroes = await searchHeroesByName(searchTerm);
       setIsLoading(false);
       setHeroes(heroes);
+      heroes.length === 0 && setNotFound("Character not found...");
     } else {
       setHeroes([]);
+      setNotFound("");
     }
   };
 
@@ -43,7 +46,11 @@ const Home: React.FC = () => {
           <SearchIcon width={25} height={25} className="icon" />
         </button>
       </SearchContainer>
-      {!isLoading ? <HeroList heroes={heroes} /> : <LoadingSpinner />}
+      {isLoading ? (
+        <LoadingSpinner />
+      ) : (
+        notFound || <HeroList heroes={heroes} />
+      )}
     </HomeContainer>
   );
 };
