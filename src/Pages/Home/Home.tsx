@@ -21,9 +21,6 @@ const Home: React.FC = () => {
       heroes.length === 0
         ? setNotFound("Character not found...")
         : setNotFound("");
-    } else {
-      setHeroes([]);
-      setNotFound("");
     }
   };
 
