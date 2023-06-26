@@ -4,7 +4,7 @@ export const HeroListContainer = styled.ul`
   display: grid;
   width: 100%;
   gap: 20px;
-  padding: 10px 0;
+  padding: 10px;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   a:hover li p {
     color: lightgrey;

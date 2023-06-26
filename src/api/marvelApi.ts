@@ -1,9 +1,9 @@
-import axios from 'axios';
-import md5 from 'md5';
+import axios from "axios";
+import md5 from "md5";
 
-const API_PUBLIC_KEY = '7219a1c1526be706bd3dbce4553bfbbd';
-const API_PRIVATE_KEY = '9f6691ff9536315840d2839ac6db2a03a037870c';
-const API_BASE_URL = 'http://gateway.marvel.com/v1/public';
+const API_PUBLIC_KEY = "7219a1c1526be706bd3dbce4553bfbbd";
+const API_PRIVATE_KEY = "9f6691ff9536315840d2839ac6db2a03a037870c";
+const API_BASE_URL = "http://gateway.marvel.com/v1/public";
 
 const marvelApi = axios.create({
   baseURL: API_BASE_URL,
@@ -21,7 +21,7 @@ export const searchHeroesByName = async (name: string) => {
   const hash = generateHash(timestamp);
 
   try {
-    const response = await marvelApi.get('/characters', {
+    const response = await marvelApi.get("/characters", {
       params: {
         apikey: API_PUBLIC_KEY,
         ts: timestamp,
@@ -31,7 +31,7 @@ export const searchHeroesByName = async (name: string) => {
     });
     return response.data.data.results;
   } catch (error) {
-    console.error('Error searching heroes:', error);
+    console.error("Error searching heroes:", error);
     throw error;
   }
 };
@@ -51,7 +51,7 @@ export const getHeroById = async (heroId: number) => {
     });
     return response.data.data.results[0];
   } catch (error) {
-    console.error('Error getting hero details:', error);
+    console.error("Error getting hero details:", error);
     throw error;
   }
 };
