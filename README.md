@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Luan's minimalist heroes-search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+O projeto Luan's minimalist heroes-search é uma aplicação web desenvolvida com React.js que tem como objetivo de buscar um personagem Marvel e mostrar sua descrição. Este projeto utiliza uma série de bibliotecas e ferramentas que contribuem para a eficiência, qualidade de código e melhor experiência de desenvolvimento. A seguir, estão algumas dessas tecnologias utilizadas:
 
-In the project directory, you can run:
+- **ESLint**: O ESLint é uma ferramenta de linting que ajuda a manter um código JavaScript limpo e consistente. Ele ajuda a identificar e corrigir problemas no código, seguindo padrões e boas práticas.
 
-### `npm start`
+- **Prettier**: O Prettier é uma ferramenta de formatação de código que ajuda a manter um estilo consistente em todo o projeto. Ele ajusta automaticamente a formatação do código, facilitando a leitura e colaboração entre os desenvolvedores.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Husky**: O Husky é uma ferramenta que permite configurar gatilhos (hooks) para executar scripts antes de certas ações do Git, como commit e push. Neste projeto, o Husky é utilizado para garantir que o código esteja livre de erros e bem formatado antes de ser commitado.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Axios**: O Axios é uma biblioteca popular para fazer requisições HTTP no navegador e no Node.js. Ele simplifica a comunicação com APIs externas, fornecendo uma interface simples e intuitiva para enviar solicitações e receber respostas.
 
-### `npm test`
+- **React Router Dom**: O React Router Dom é uma biblioteca de roteamento para aplicações React que permite a navegação entre diferentes páginas ou componentes sem a necessidade de recarregar a página. Ele facilita a criação de rotas e URLs amigáveis, proporcionando uma experiência de navegação suave aos usuários.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Styled Components**: O Styled Components é uma biblioteca que permite escrever estilos CSS diretamente nos componentes React, utilizando uma sintaxe similar ao CSS. Ele traz benefícios como o encapsulamento de estilos, reutilização de componentes estilizados e facilita a manutenção do código.
 
-### `npm run build`
+Essas ferramentas e bibliotecas foram escolhidas para melhorar a produtividade, qualidade de código e facilitar o desenvolvimento do projeto, proporcionando uma experiência mais agradável e eficiente tanto para os desenvolvedores quanto para os usuários.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Siga as instruções abaixo para instalar e configurar o projeto em seu ambiente local.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requisitos
 
-### `npm run eject`
+Certifique-se de ter os seguintes softwares instalados em seu sistema:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Node.js
+- Yarn
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Passo a passo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone este repositório para o seu diretório local:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/seu-usuario/seu-projeto.git
 
-## Learn More
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Clone este repositório para o seu diretório local:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd seu-projeto
+
+   ```
+
+3. Instale as dependências do projeto usando o Yarn:
+
+   ```bash
+   yarn install
+
+   ```
+
+4. Inicie o projeto:
+
+   ```bash
+   yarn start
+   ```
