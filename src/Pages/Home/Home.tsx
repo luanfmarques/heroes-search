@@ -3,7 +3,7 @@ import { searchHeroesByName } from "../../api/marvelApi";
 import HeroList from "../../components/HeroList/HeroList";
 import { Hero } from "../../types/hero.type";
 import { HomeContainer, SearchContainer } from "./styles";
-import SearchIcon from "../../components/SearchIcon";
+import SearchIcon from "../../components/SearchIcon/SearchIcon";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 
 const Home: React.FC = () => {
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 
   return (
     <HomeContainer>
-      Luan's heroes-search
+      Luan's minimalist heroes-search
       <SearchContainer>
         <input
           type="text"

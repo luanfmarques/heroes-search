@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Icon } from "../assets/icons/search.svg";
+import { ReactComponent as Icon } from "../../assets/icons/search.svg";
 
 interface SVGIconProps {
   width?: number;
